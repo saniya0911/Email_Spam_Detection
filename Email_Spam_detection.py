@@ -26,9 +26,9 @@ from sklearn.naive_bayes import MultinomialNB
 # Importing the Pipeline class from scikit-learn
 from sklearn.pipeline import Pipeline
 
-# Library used for ignore warnings
-import warnings
-warnings.filterwarnings('ignore')
+# # Library used for ignore warnings
+# import warnings
+# # warnings.filterwarnings('ignore')
 
 # ### Dataset Loading
 
@@ -110,7 +110,7 @@ df['Spam'] = df['Category'].apply(lambda x: 1 if x == 'spam' else 0)
 
 
 # Updated new dataset
-df.head()
+print('df_head:', df.head())
 
 # ## ***4. Data Vizualization, Storytelling & Experimenting with charts : Understand the relationships between variables***
 
